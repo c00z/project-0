@@ -1,0 +1,33 @@
+*{
+  border: 3px dashed black;
+}
+
+
+body {
+  background-color: #d8d8d8;
+}
+
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 70px;
+}
+
+.box {
+  border: 5px solid black;
+  height: 150px;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.col-md-12 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#board {
+  margin-top: 8px;
+}
