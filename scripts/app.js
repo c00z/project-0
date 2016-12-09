@@ -4,12 +4,12 @@ var boxIndex = $('.box').index();
 
 $(document).ready(function() {
 
-var boxNum = $(".box").length
+// var boxNum = $(".box").length
 // // for (var i = 1; i <= boxNum; i++) {
 //   $('#p' + i).on('click', function() {
   // for (var i = 1; i <= boxNum; i++) {
   $(".box").on("click", function() {
-    $(this).addClass("emptybox")
+    $(this).addClass("bombbox")
     console.log(this)
   })
   // $(".box").addClass('.emptybox');
