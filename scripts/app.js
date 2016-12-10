@@ -34,10 +34,9 @@ for (var i = 0; i < 6; i++) {
 
 createBoard();
 
-//
+//Checks for win scenario in bombArray
 function checkWin(selections) {
   var ret = false;
-//Checks for win scenario in bombArray
 bombArray.forEach(function(combo){
     var count = 0;
     combo.forEach(function(num) {
@@ -51,16 +50,17 @@ bombArray.forEach(function(combo){
       ret = true;
     }
   });
-
   return ret;
 }
-
+console.log(selections)
 
 
 //Timer
 var count=14;
-var counter=setInterval(timer, 1000); //will run every 1 second
-function timer() {
+// var counter=setInterval(timer, 1000); //will run every 1 second
+
+$(".button").on("click", function timer() {
+  var counter=setInterval(timer, 1000);
   count=count-1;
   if (count < 0)
   {
@@ -69,7 +69,7 @@ function timer() {
      return;
   }
   document.getElementById("timer").innerHTML=count + " secs";
-}
+})
 
 
 });
