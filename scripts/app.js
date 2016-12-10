@@ -1,4 +1,3 @@
-var playerData = '';
 var boxIndex = $('.box').index();
 var bombArray = [];
 
@@ -6,8 +5,6 @@ $(document).ready(function() {
 
   $(".box").on("click", function() {
     if($(this).hasClass("bombbox")) {
-      // addClass("bombbox");
-     console.log("bomb")
     } else {
     $(this).addClass("emptybox")
   }
@@ -20,21 +17,14 @@ var gameBoard =
   'p19', 'p20', 'p21', 'p22', 'p23', 'p24',
   'p25', 'p26', 'p27', 'p28', 'p29', 'p30'];
 
-//loop through bomb array assign new
-
-//   bombArray.forEach(function(element) {
-//   $('#' + element).addClass("bombbox");
-//   }
-// )
-
-//Get random number, assign to bombArray to place bombs randomly & loop through
+//Get random number, assign to bombArray & loop through to place randomly
 function createBoard () {
 for (var i = 0; i < 6; i++) {
   bombArray.forEach(function(element) {
     $('#' + element).click(function() {
     $(this).addClass("bombbox");
-  })
-  })
+    })
+})
   bombArray.push(gameBoard[(Math.floor(Math.random()*(30-1)+1))])
   console.log(bombArray)
   }
@@ -44,7 +34,7 @@ for (var i = 0; i < 6; i++) {
 createBoard();
 
 //Timer
-var count=10;
+var count=20;
 var counter=setInterval(timer, 1000); //will run every 1 second
 function timer() {
   count=count-1;
