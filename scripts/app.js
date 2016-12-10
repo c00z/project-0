@@ -1,5 +1,6 @@
 var boxIndex = $('.box').index();
 var bombArray = [];
+var selections = [];
 
 $(document).ready(function() {
 
@@ -17,7 +18,7 @@ var gameBoard =
   'p19', 'p20', 'p21', 'p22', 'p23', 'p24',
   'p25', 'p26', 'p27', 'p28', 'p29', 'p30'];
 
-//Get random number, assign to bombArray & loop through to place randomly
+//Get random number, assign to bombArray & loop through to place randomly on board
 function createBoard () {
 for (var i = 0; i < 6; i++) {
   bombArray.forEach(function(element) {
@@ -33,8 +34,31 @@ for (var i = 0; i < 6; i++) {
 
 createBoard();
 
+//
+function checkWin(selections) {
+  var ret = false;
+//Checks for win scenario in bombArray
+bombArray.forEach(function(combo){
+    var count = 0;
+    combo.forEach(function(num) {
+      var match = selections.indexOf(num) > -1;
+      if (match) {
+        count++;
+      }
+    });
+//if greater than 5, considered win
+    if (count > 5) {
+      ret = true;
+    }
+  });
+
+  return ret;
+}
+
+
+
 //Timer
-var count=20;
+var count=14;
 var counter=setInterval(timer, 1000); //will run every 1 second
 function timer() {
   count=count-1;
