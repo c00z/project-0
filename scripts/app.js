@@ -1,6 +1,8 @@
 var boxIndex = $('.box').index();
 var bombArray = [];
 var selections = [];
+var score = 0;
+var hasWon = false;
 
 $(document).ready(function() {
 
@@ -10,6 +12,7 @@ $(document).ready(function() {
     $(this).addClass("emptybox")
   }
   })
+
 //array game board
 var gameBoard =
   ['p1', 'p2', 'p3', 'p4', 'p5', 'p6',
@@ -34,6 +37,7 @@ for (var i = 0; i < 6; i++) {
 
 createBoard();
 
+// var selections =[];
 //Checks for win scenario in bombArray
 function checkWin(selections) {
   var ret = false;
@@ -52,24 +56,30 @@ bombArray.forEach(function(combo){
   });
   return ret;
 }
+
 console.log(selections)
 
+//.shift out of array, if empty win. if this.target
 
 //Timer
-var count=14;
-// var counter=setInterval(timer, 1000); //will run every 1 second
-
+var count=15;
 $(".button").on("click", function timer() {
   var counter=setInterval(timer, 1000);
-  count=count-1;
+  count -= 1;
   if (count < 0)
   {
   clearInterval(counter);
-    location.reload("emptybox");
+    location.reload(".box");
      return;
   }
   document.getElementById("timer").innerHTML=count + " secs";
 })
+
+function timer(count){
+  setInterval(timer,1000);
+  count -= 1
+  return count;
+}
 
 
 });

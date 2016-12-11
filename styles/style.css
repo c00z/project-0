@@ -4,7 +4,12 @@
  */
 
 body {
-  background-color: #2DC2E0;
+  background-color: black;
+  background-image:url(http://4.bp.blogspot.com/-1yk1K4gmCYk/TaKmJmG1d8I/AAAAAAAABPk/F2hXLF2O2ZE/s1600/110324-N-4451V-040.JPG);
+  background-size: cover;
+  border-radius: 6px;
+  max-width:100%;
+  max-height:100%;
 }
 
 
@@ -17,20 +22,25 @@ h1 {
 .box {
   border: 3px solid black;
   height: 130px;
-  background-color: #b1b5bc;
+  background-color: red;
   border-radius: 6px;
+}
+
+.box:hover {
+    background-color: #595e66;
+    color: white;
 }
 
 .emptybox {
   border: 3px solid blue;
   height: 130px;
-  background-color: #6a6b6d;
+  background-color: transparent;
   border-radius: 6px;
-  background-image:url(http://i.imgur.com/ftMeO6B.png);
+  /*background-image:url(https://cdn.pixabay.com/photo/2016/07/29/04/21/web-1550385_960_720.png);
   background-size: cover;
   border-radius: 6px;
   max-width:100%;
-  max-height:75%;
+  max-height:100%;*/
 }
 
 .bombbox {
@@ -52,4 +62,48 @@ h1 {
 
 #board {
   margin-top: 8px;
+}
+
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
 }
