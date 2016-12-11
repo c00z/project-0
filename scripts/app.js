@@ -61,7 +61,7 @@ console.log(selections)
 
 //.shift out of array, if empty win. if this.target
 
-//Timer
+// //Timer
 var count=15;
 $(".button").on("click", function timer() {
   var counter=setInterval(timer, 1000);
@@ -75,11 +75,12 @@ $(".button").on("click", function timer() {
   document.getElementById("timer").innerHTML=count + " secs";
 })
 
-function timer(count){
-  setInterval(timer,1000);
-  count -= 1
-  return count;
-}
+// function timer(count){
+//   setInterval(timer,1000);
+//   count -= 1
+//   return count;
+// }
+
 
 
 });

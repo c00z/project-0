@@ -7,7 +7,7 @@ body {
   background-color: black;
   background-image:url(http://4.bp.blogspot.com/-1yk1K4gmCYk/TaKmJmG1d8I/AAAAAAAABPk/F2hXLF2O2ZE/s1600/110324-N-4451V-040.JPG);
   background-size: cover;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   max-width:100%;
   max-height:100%;
 }
@@ -15,14 +15,22 @@ body {
 
 h1 {
   font-family: 'Inconsolata', monospace;
-/*   font-size: 50px; */
+  background: white;
+  opacity: .8;
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 900;
+  text-shadow: 3px 4px 5px #000;
+  border-radius: 6px;
+  padding: 5px;
+
 }
 
 
 .box {
   border: 3px solid black;
   height: 130px;
-  background-color: red;
+  background-color: #e53935;
   border-radius: 6px;
 }
 
@@ -54,56 +62,17 @@ h1 {
   max-height:75%;
 }
 
-.col-md-12 {
-  font-size: 25px;
+#header {
+  font-size: 35px;
   text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+  text-shadow: 3px 4px 5px white;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 
 #board {
   margin-top: 8px;
-}
-
-
-/* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-/* Modal Body */
-.modal-body {padding: 2px 16px;}
-
-/* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
 }
