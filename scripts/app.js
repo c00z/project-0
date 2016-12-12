@@ -6,6 +6,7 @@ var hasWon = false;
 
 var heartBeat = $("#heartBeat");
 
+
 $(document).ready(function() {
 
   $(".box").on("click", function() {
@@ -39,32 +40,41 @@ for (var i = 0; i < 6; i++) {
 
 createBoard();
 
+
+//
+// if ($(".bombbox").on("click", function() {
+//   // var selections = 0;
+//   selections ++;
+//   return;
+//  $("#userscore").css("User Score: " + selections);
+// })
+// console.log(selections)
+
 //Checks for win scenario in bombArray
-function checkWin(selections) {
-  var ret = false;
-bombArray.forEach(function(combo){
-    var count = 0;
-    combo.forEach(function(num) {
-      var match = selections.indexOf(num) > -1;
-      if (match) {
-        count++;
-      }
-    });
-//if greater than 5, considered win
-    if (count > 5) {
-      ret = true;
-    }
-  });
-  return ret;
-}
+// function checkWin(selections) {
+//   var ret = false;
+// bombArray.forEach(function(combo){
+//     var count = 0;
+//     combo.forEach(function(num) {
+//       var match = selections.indexOf(num) > -1;
+//       if (match) {
+//         count++;
+//       }
+//     });
+// //if greater than 5, considered win
+//     if (count > 5) {
+//       ret = true;
+//     }
+//   });
+//   return ret;
+// }
+//
+// console.log(selections)
 
-console.log(selections)
-
-//.shift out of array, if empty win. if this.target
-
+//TIMER
 var count = 0;
 $(".button").on('click', function(){
-   var count = 10;
+   var count = 11;
    setInterval(function() {
      count--;
       if (count >= 0) {
@@ -73,9 +83,9 @@ $(".button").on('click', function(){
          console.log(count)
       }
       if (count === 0) {
-         alert('sorry, out of time');
+         alert('YOU JUST WENT BOOOOOOM!');
          clearInterval(count);
-         location.reload(".box");
+         location.reload("#board");
          return;
        }
        document.getElementById("timer").innerHTML=count + " secs";
@@ -90,17 +100,12 @@ $(".button").on('click', function(){
 //     }, 1000 ); // how long the animation should be
 //   });
 
+
 // audio
 
 function playHeart() {
   heartBeat.play();
 }
-
-// function timer(count){
-//   setInterval(timer,1000);
-//   count -= 1
-//   return count;
-// }
 
 
 

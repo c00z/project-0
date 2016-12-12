@@ -52,7 +52,7 @@ h1 {
 .bombbox {
   border: 3px solid red;
   height: 130px;
-  background-color: #6a6b6d;
+  background-color: #ff1744;
   background-image: url(http://simpleicon.com/wp-content/uploads/bomb.png);
   background-size: cover;
   border-radius: 6px;
@@ -117,7 +117,7 @@ h1 {
   margin-top: 8px;
 }
 
-/*#dimScreen {
+#dimScreen {
     width: 100%;
     height: 100%;
     background: black;
@@ -127,7 +127,7 @@ h1 {
     z-index: 1;
     transition: .5s;
     color: white;
-}*/
+}
 
 /*#hiddenImg {
   width: 100%;
