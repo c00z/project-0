@@ -10,7 +10,7 @@ Check out the game I created for WDI's project zero. The object is to find all t
 
 Feel free to fork / star / watch for your own personal use.
 
-See the published project at [github.com/c00z/project-0](https://github.com/c00z/project-0)!
+See the published project at [bombsquad.bitballoon.com](http://bombsquad.bitballoon.com/)!
 
 ## Technologies Used
 
