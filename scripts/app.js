@@ -39,7 +39,6 @@ for (var i = 0; i < 6; i++) {
 
 createBoard();
 
-// var selections =[];
 //Checks for win scenario in bombArray
 function checkWin(selections) {
   var ret = false;
@@ -66,7 +65,7 @@ console.log(selections)
 // //Timer
 var count=25;
 $(".button").on("click", function timer() {
-  var counter=setInterval(timer, 1000);
+  var counter=setInterval(timer, 2000);
   count -= 1;
   if (count < 0)
   {
@@ -77,6 +76,14 @@ $(".button").on("click", function timer() {
   document.getElementById("timer").innerHTML=count + " secs";
 });
 
+
+//cover div
+//
+// $("#dimScreen").on("click", function() {
+//     $(".hiddenDiv").css({
+//       height: "0px"
+//     }, 1000 ); // how long the animation should be
+//   });
 
 // audio
 
