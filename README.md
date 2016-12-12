@@ -39,6 +39,6 @@ createBoard();
 ```
 
 ### Screen Shots
+[Game Play 1](http://i.imgur.com/cvyqW3y.png)
+[Game Play 2](http://i.imgur.com/mrBQWjV.png)
 
-
-Take screen shots using `control` `command` `shift` `4`. The image will be on your clipboard and you can paste it where you like with `command` `v`. If you paste it anywhere within a github text editing window, it will give you a markdown version.
