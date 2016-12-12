@@ -117,7 +117,7 @@ h1 {
   margin-top: 8px;
 }
 
-#dimScreen {
+/*#dimScreen {
     width: 100%;
     height: 100%;
     background: black;
@@ -127,7 +127,7 @@ h1 {
     z-index: 1;
     transition: .5s;
     color: white;
-}
+}*/
 
 /*#hiddenImg {
   width: 100%;

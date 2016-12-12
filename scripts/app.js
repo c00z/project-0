@@ -62,20 +62,25 @@ console.log(selections)
 
 //.shift out of array, if empty win. if this.target
 
-// //Timer
-var count=25;
-$(".button").on("click", function timer() {
-  var counter=setInterval(timer, 2000);
-  count -= 1;
-  if (count < 0)
-  {
-  clearInterval(counter);
-    location.reload(".box");
-     return;
-  }
-  document.getElementById("timer").innerHTML=count + " secs";
+var count = 0;
+$(".button").on('click', function(){
+   var count = 10;
+   setInterval(function() {
+     count--;
+      if (count >= 0) {
+         span = $(".count");
+         span.innerHTML = count;
+         console.log(count)
+      }
+      if (count === 0) {
+         alert('sorry, out of time');
+         clearInterval(count);
+         location.reload(".box");
+         return;
+       }
+       document.getElementById("timer").innerHTML=count + " secs";
+     }, 1000);
 });
-
 
 //cover div
 //
