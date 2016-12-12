@@ -41,6 +41,27 @@ for (var i = 0; i < 6; i++) {
 createBoard();
 
 
+
+// var hasBeenClicked = false;
+// jQuery('bombox').click(function () {
+//     hasBeenClicked = true;
+// });
+//
+// if (hasBeenClicked) {
+//     $('.header').html(`You have won`);
+// }
+
+//
+// $('.bombox').click(function(){
+//   $(this).data('clicked', true);
+//
+// if($('.bombbox').data('clicked')) {
+//     $('.header').html(`You have won`);
+// // } else {
+// //     //run function2
+// }
+
+// });
 //
 // if ($(".bombbox").on("click", function() {
 //   // var selections = 0;
