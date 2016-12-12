@@ -7,7 +7,6 @@ body {
   background-color: black;
   background-image:url(http://4.bp.blogspot.com/-1yk1K4gmCYk/TaKmJmG1d8I/AAAAAAAABPk/F2hXLF2O2ZE/s1600/110324-N-4451V-040.JPG);
   background-size: cover;
-  /*border-radius: 6px;*/
   max-width:100%;
   max-height:100%;
 }
@@ -75,4 +74,36 @@ h1 {
 
 #board {
   margin-top: 8px;
+}
+
+
+.button{
+  border-radius: 6px;
+	width:150px;
+	text-align: center;
+	background: whiteSmoke;
+  display: inline-block;
+	font-weight: bold;
+	color: #d32f2f;
+	text-decoration: none;
+	border: 1px solid #888;
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }

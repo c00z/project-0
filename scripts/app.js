@@ -4,6 +4,8 @@ var selections = [];
 var score = 0;
 var hasWon = false;
 
+var heartBeat = $("#heartBeat");
+
 $(document).ready(function() {
 
   $(".box").on("click", function() {
@@ -62,7 +64,7 @@ console.log(selections)
 //.shift out of array, if empty win. if this.target
 
 // //Timer
-var count=15;
+var count=25;
 $(".button").on("click", function timer() {
   var counter=setInterval(timer, 1000);
   count -= 1;
@@ -73,7 +75,14 @@ $(".button").on("click", function timer() {
      return;
   }
   document.getElementById("timer").innerHTML=count + " secs";
-})
+});
+
+
+// audio
+
+function playHeart() {
+  heartBeat.play();
+}
 
 // function timer(count){
 //   setInterval(timer,1000);
