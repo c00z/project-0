@@ -10,7 +10,7 @@ Check out the game I created for WDI's project zero. The object is to find all t
 
 Feel free to fork / star / watch for your own personal use.
 
-See the published project at [github.com/c00z/project-0](https://github.com/c00z/project-0)!
+See the published project at [bombsquad.bitballoon.com](http://bombsquad.bitballoon.com/)!
 
 ## Technologies Used
 
@@ -39,6 +39,6 @@ createBoard();
 ```
 
 ### Screen Shots
+[Game Play 1](http://i.imgur.com/cvyqW3y.png)
+[Game Play 2](http://i.imgur.com/mrBQWjV.png)
 
-
-Take screen shots using `control` `command` `shift` `4`. The image will be on your clipboard and you can paste it where you like with `command` `v`. If you paste it anywhere within a github text editing window, it will give you a markdown version.
